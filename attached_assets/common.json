@@ -1,0 +1,64 @@
+{
+    "app-title": {
+        "title": "Kozzo - Solutions numériques"
+    },
+    
+    "header": {
+        "language": "EN",
+        "services": "Services",
+        "realisations": "Réalisations",
+        "about": "À propos",
+        "contact": "Contact"
+    },
+
+    "top-section": {
+        "main-sentence": "Propulsons votre entreprise vers le monde de demain",
+        "detailed-sentence": "Des solutions numériques personnalisées qui répondent à vos besoins spécifiques et optimisent votre intégration digitale.",
+        "button-text": "Parlons de votre projet !"
+    },
+
+    "services": {
+        "title": "Nos services",
+        "web-design-code-title": "Développement Web avec code",
+        "web-design-code-desc": "Révolutionnez votre image numérique à l'aide de nos solutions web sur-mesure. L'équipe de Kozzo possède l'expertise en développement permettant à votre organisation de se démarquer face à la concurrence.",
+        "web-design-no-code-title": "Conception Web sans code",
+        "web-design-no-code-desc": "Simplifiez la création de votre site avec notre service de conception sans code. Gagnez du temps et personnalisez votre image web avec des modèles de conception répondant à vos préférences.",
+        "software-solutions-title": "Création de solutions logicielles",
+        "software-solutions-desc": "Optimisez vos systèmes grâce à nos solutions logicielles adaptées à vos besoins. Que ce soit pour automatiser des processus, faciliter vos opérations internes ou mesurer la performance de vos systèmes, nous sommes là pour vous.",
+        "service-maintenance-title": "Maintenance des services",
+        "service-maintenance-desc": "Assurez la continuité de vos opérations grâce à notre service de maintenance complet. Nous veillons à ce que vos systèmes demeurent à jour tout en minimisant les interruptions et en maximisant la fiabilité."
+    },
+
+    "about-us": {
+        "about-us-title": "À propos",
+        "kozzo-history": "Fondée en 2024 par Étienne Arsenault, bachelier en informatique, et Jonathan Bessette, finissant en génie logiciel, Kozzo est une jeune entreprise motivée à aider ses clients à se démarquer dans le monde en pleine expansion du numérique.",
+        "kozzo-description": "Nous savons que chaque projet numérique nécessite une approche sur-mesure ainsi qu'une étroite collaboration avec nos clients. Nous créons de cette façon des solutions adaptées qui améliorent votre visibilité et garantissent une intégration fluide, apportant ainsi une valeur ajoutée à votre entreprise. Rejoignez Kozzo pour bénéficier de notre savoir-faire professionnel et transformer vos idées en réalité.",
+        "together":"Ensemble, propulsons votre entreprise vers le monde de demain !",
+        "co-owner-title": "Co-propriétaire"
+    },
+
+    "contact-us":{
+        "contact-us-title": "Parlons de votre projet !",
+        "need-help": "Besoin d'aide avec votre projet informatique?",
+        "contact-us-now": "Contactez-nous !",
+        "stay-connected": "Restons connectés",
+        "how-can-we-help": "Comment pouvons-nous vous aider?",
+        "name-label": "Nom",
+        "email-label": "Courriel",
+        "object-label": "Sujet",
+        "message-label": "Message",
+        "object-placeholder": "Travaillons ensemble !",
+        "message-placeholder": "Qu'avez-vous en tête?",
+        "submit-button": "Commencez votre aventure !",
+        "name-error": "Nom est requis",
+        "email-error-required": "Courriel est requis",
+        "email-error-invalid":"Courriel invalide",
+        "object-error": "Sujet est requis",
+        "message-error": "Message est requis",
+        "confirmation-message": "Merci d'avoir soumis votre demande à Kozzo ! Notre équipe répondra à votre requête dans les plus bref délais."
+    },
+
+    "footer": {
+        "rights-reserved": "© 2024 Kozzo. Tous droits réservés."
+    }
+}
