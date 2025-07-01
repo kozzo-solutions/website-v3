@@ -57,8 +57,15 @@ export const translations = {
         "description": "Nous créons un plan détaillé et des maquettes pour visualiser votre solution avant le développement, garantissant votre satisfaction."
       },
       "step3": {
-        "title": "Développement et livraison",
-        "description": "Notre équipe développe votre solution avec des mises à jour régulières, tests rigoureux et un déploiement professionnel."
+        "title": "Développement et tests",
+        "description": "Notre équipe développe votre solution avec des mises à jour régulières, tests rigoureux et une attention particulière aux détails."
+      },
+      "step4": {
+        "title": "Lancement et support",
+        "description": "Déploiement professionnel de votre solution et accompagnement continu pour assurer votre succès à long terme."
+      },
+      "status": {
+        "completed": "Étape validée"
       }
     },
     "about-us": {
@@ -163,8 +170,15 @@ export const translations = {
         "description": "We create a detailed plan and mockups to visualize your solution before development, ensuring your satisfaction."
       },
       "step3": {
-        "title": "Development and delivery",
-        "description": "Our team develops your solution with regular updates, rigorous testing, and professional deployment."
+        "title": "Development and testing",
+        "description": "Our team develops your solution with regular updates, rigorous testing, and attention to every detail."
+      },
+      "step4": {
+        "title": "Launch and support",
+        "description": "Professional deployment of your solution and ongoing support to ensure your long-term success."
+      },
+      "status": {
+        "completed": "Step completed"
       }
     },
     "about-us": {
