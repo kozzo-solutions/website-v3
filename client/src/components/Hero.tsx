@@ -63,17 +63,17 @@ export function Hero() {
       </div>
 
       {/* Content Layout */}
-      <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 items-center min-h-[80vh]">
+      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-20 relative z-10">
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center min-h-[80vh]">
           {/* Left Content - Title, Text, Buttons Only */}
-          <div className="col-span-12 lg:col-span-7 space-y-8">
+          <div className="col-span-12 lg:col-span-7 space-y-6 lg:space-y-8 text-center lg:text-left">
             {/* Title */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="text-white">
                   {t("top-section.main-sentence").split(" ")[0]}
                 </span>
@@ -86,7 +86,7 @@ export function Hero() {
 
             {/* Subtitle */}
             <motion.p
-              className="text-xl text-white/80 leading-relaxed max-w-2xl"
+              className="text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto lg:mx-0"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -96,7 +96,7 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
