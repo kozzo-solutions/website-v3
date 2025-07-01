@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin } from "lucide-react";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/contexts/LanguageContext";
+import kozzoLogoNomCoul from "@assets/kozzo-logo-nom-coul.png";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -29,10 +30,11 @@ export function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-[#A4508B] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">K</span>
-              </div>
-              <span className="text-xl font-bold">KOZZO</span>
+              <img
+                src={kozzoLogoNomCoul}
+                alt="Kozzo Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-400 leading-relaxed">
               {t("footer.description")}
@@ -53,7 +55,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("services")}
-                  className="text-gray-400 hover:text-[#A4508B] transition-colors duration-300"
+                  className="text-gray-400 hover:text-[#82175D] transition-colors duration-300"
                 >
                   {t("header.services")}
                 </button>
@@ -61,7 +63,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("realisations")}
-                  className="text-gray-400 hover:text-[#A4508B] transition-colors duration-300"
+                  className="text-gray-400 hover:text-[#82175D] transition-colors duration-300"
                 >
                   {t("header.realisations")}
                 </button>
@@ -69,7 +71,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
-                  className="text-gray-400 hover:text-[#A4508B] transition-colors duration-300"
+                  className="text-gray-400 hover:text-[#82175D] transition-colors duration-300"
                 >
                   {t("header.about")}
                 </button>
@@ -77,7 +79,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("contact")}
-                  className="text-gray-400 hover:text-[#A4508B] transition-colors duration-300"
+                  className="text-gray-400 hover:text-[#82175D] transition-colors duration-300"
                 >
                   {t("header.contact")}
                 </button>
@@ -115,9 +117,7 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400">
-            {t("footer.rights-reserved")}
-          </p>
+          <p className="text-gray-400">{t("footer.rights-reserved")}</p>
         </motion.div>
       </div>
     </footer>

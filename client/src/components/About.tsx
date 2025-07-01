@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/contexts/LanguageContext";
 import etienneImg from "@assets/etienne.png";
 import jonathanImg from "@assets/jonathan.png";
 
@@ -20,7 +20,7 @@ export function About() {
             {t("about-us.about-us-title")}
           </motion.h2>
           <motion.div
-            className="w-24 h-1 bg-[#A4508B] mx-auto rounded-full"
+            className="w-24 h-1 bg-[#82175D] mx-auto rounded-full"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -50,7 +50,7 @@ export function About() {
               {t("about-us.kozzo-description")}
             </motion.p>
             <motion.p
-              className="text-2xl font-semibold text-[#A4508B]"
+              className="text-2xl font-semibold text-[#82175D]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -77,12 +77,12 @@ export function About() {
                   className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-background shadow-xl group-hover:scale-105 transition-transform duration-300"
                   whileHover={{ scale: 1.05 }}
                 />
-                <div className="absolute inset-0 rounded-full bg-[#A4508B]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 rounded-full bg-[#82175D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 Étienne Arsenault
               </h3>
-              <p className="text-[#A4508B] font-semibold mb-4">
+              <p className="text-[#82175D] font-semibold mb-4">
                 {t("about-us.co-owner-title")}
               </p>
               <p className="text-muted-foreground leading-relaxed">
@@ -105,12 +105,12 @@ export function About() {
                   className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-background shadow-xl group-hover:scale-105 transition-transform duration-300"
                   whileHover={{ scale: 1.05 }}
                 />
-                <div className="absolute inset-0 rounded-full bg-[#A4508B]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 rounded-full bg-[#82175D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 Jonathan Bessette
               </h3>
-              <p className="text-[#A4508B] font-semibold mb-4">
+              <p className="text-[#82175D] font-semibold mb-4">
                 {t("about-us.co-owner-title")}
               </p>
               <p className="text-muted-foreground leading-relaxed">

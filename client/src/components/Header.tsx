@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/contexts/LanguageContext";
 import { useTheme } from "@/components/ThemeProvider";
+import kozzoLogoNomCoul from "@assets/kozzo-logo-nom-coul.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,59 +45,46 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-[#A4508B] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">K</span>
-            </div>
-            <span className="text-2xl font-bold text-foreground">KOZZO</span>
+            <img
+              src={kozzoLogoNomCoul}
+              alt="Kozzo Logo"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("services")}
-              className="text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+              className="text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
             >
               {t("header.services")}
             </button>
             <button
               onClick={() => scrollToSection("realisations")}
-              className="text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+              className="text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
             >
               {t("header.realisations")}
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+              className="text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
             >
               {t("header.about")}
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+              className="text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
             >
               {t("header.contact")}
             </button>
-
-            {/* Theme Toggle */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleTheme}
-              className="p-2"
-            >
-              {theme === "dark" ? (
-                <Sun className="h-4 w-4" />
-              ) : (
-                <Moon className="h-4 w-4" />
-              )}
-            </Button>
 
             {/* Language Toggle */}
             <Button
               variant="outline"
               size="sm"
               onClick={toggleLanguage}
-              className="border-[#A4508B] text-[#A4508B] hover:bg-[#A4508B] hover:text-white"
+              className="border-[#82175D] text-[#82175D] hover:bg-[#82175D] hover:text-white"
             >
               {currentLanguage === "fr" ? "EN" : "FR"}
             </Button>
@@ -121,7 +109,11 @@ export function Header() {
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -132,25 +124,25 @@ export function Header() {
             <div className="flex flex-col space-y-4 mt-4">
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-left text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+                className="text-left text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
               >
                 {t("header.services")}
               </button>
               <button
                 onClick={() => scrollToSection("realisations")}
-                className="text-left text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+                className="text-left text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
               >
                 {t("header.realisations")}
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-left text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+                className="text-left text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
               >
                 {t("header.about")}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-left text-muted-foreground hover:text-[#A4508B] transition-colors duration-200"
+                className="text-left text-muted-foreground hover:text-[#82175D] transition-colors duration-200"
               >
                 {t("header.contact")}
               </button>
@@ -158,7 +150,7 @@ export function Header() {
                 variant="outline"
                 size="sm"
                 onClick={toggleLanguage}
-                className="w-fit border-[#A4508B] text-[#A4508B] hover:bg-[#A4508B] hover:text-white"
+                className="w-fit border-[#82175D] text-[#82175D] hover:bg-[#82175D] hover:text-white"
               >
                 {currentLanguage === "fr" ? "EN" : "FR"}
               </Button>

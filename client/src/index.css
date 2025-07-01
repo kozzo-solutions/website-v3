@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --background: 0 0% 100%; /* #FFFFFF */
@@ -15,7 +14,7 @@
   --card-foreground: 222 84% 4.9%; /* #020817 */
   --border: 214 32% 91%; /* #E2E8F0 */
   --input: 214 32% 91%; /* #E2E8F0 */
-  --primary: 324 65% 53%; /* #A4508B - Kozzo Purple */
+  --primary: 324 65% 53%; /* #82175D - Kozzo Purple */
   --primary-foreground: 210 40% 98%; /* #F8FAFC */
   --secondary: 210 40% 96%; /* #F1F5F9 */
   --secondary-foreground: 222 84% 4.9%; /* #020817 */
@@ -23,7 +22,7 @@
   --accent-foreground: 222 84% 4.9%; /* #020817 */
   --destructive: 0 84% 60%; /* #EF4444 */
   --destructive-foreground: 210 40% 98%; /* #F8FAFC */
-  --ring: 324 65% 53%; /* #A4508B - Kozzo Purple */
+  --ring: 324 65% 53%; /* #82175D - Kozzo Purple */
   --radius: 0.75rem;
 }
 
@@ -38,7 +37,7 @@
   --card-foreground: 210 40% 98%; /* #F8FAFC */
   --border: 217 33% 17%; /* #334155 */
   --input: 217 33% 17%; /* #334155 */
-  --primary: 324 65% 53%; /* #A4508B - Kozzo Purple */
+  --primary: 324 65% 53%; /* #82175D - Kozzo Purple */
   --primary-foreground: 222 84% 4.9%; /* #020817 */
   --secondary: 217 33% 17%; /* #334155 */
   --secondary-foreground: 210 40% 98%; /* #F8FAFC */
@@ -46,18 +45,18 @@
   --accent-foreground: 210 40% 98%; /* #F8FAFC */
   --destructive: 0 63% 31%; /* #7F1D1D */
   --destructive-foreground: 210 40% 98%; /* #F8FAFC */
-  --ring: 324 65% 53%; /* #A4508B - Kozzo Purple */
+  --ring: 324 65% 53%; /* #82175D - Kozzo Purple */
 }
 
 @layer base {
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-family: "Onest", system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
   html {
@@ -150,12 +149,18 @@
 
   /* Smooth transitions for theme switching */
   * {
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease,
+      border-color 0.3s ease;
   }
 
   /* Custom gradient backgrounds */
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary) / 0.05) 50%, hsl(var(--primary) / 0.1) 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--primary) / 0.05) 50%,
+      hsl(var(--primary) / 0.1) 100%
+    );
   }
 
   /* Enhanced button hover effects */
@@ -165,7 +170,8 @@
 
   .btn-hover-lift:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   /* Typography improvements */
@@ -206,7 +212,11 @@
 
   /* Custom gradients */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 0.8));
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--primary) / 0.8)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -214,7 +224,12 @@
 
   /* Loading states */
   .loading-skeleton {
-    background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--muted-foreground) / 0.1) 50%, hsl(var(--muted)) 75%);
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 25%,
+      hsl(var(--muted-foreground) / 0.1) 50%,
+      hsl(var(--muted)) 75%
+    );
     background-size: 200% 100%;
     animation: loading 1.5s infinite;
   }

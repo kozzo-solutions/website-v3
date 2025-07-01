@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 const steps = [
   {
@@ -50,7 +50,7 @@ export function Process() {
             {t("process.title")}
           </motion.h2>
           <motion.div
-            className="w-24 h-1 bg-[#A4508B] mx-auto rounded-full mb-6"
+            className="w-24 h-1 bg-[#82175D] mx-auto rounded-full mb-6"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -70,8 +70,8 @@ export function Process() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 relative">
             {/* Connection lines for desktop */}
-            <div className="hidden md:block absolute top-16 left-1/3 right-1/3 h-0.5 bg-gradient-to-r from-[#A4508B] via-[#A4508B] to-[#A4508B] opacity-30" />
-            
+            <div className="hidden md:block absolute top-16 left-1/3 right-1/3 h-0.5 bg-gradient-to-r from-[#82175D] via-[#82175D] to-[#82175D] opacity-30" />
+
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}
@@ -83,7 +83,7 @@ export function Process() {
               >
                 <div className="relative mb-6">
                   <motion.div
-                    className="w-20 h-20 bg-[#A4508B] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg"
+                    className="w-20 h-20 bg-[#82175D] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg"
                     whileHover={{ rotate: 5 }}
                   >
                     {step.number}
@@ -109,24 +109,6 @@ export function Process() {
                 </p>
               </motion.div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Button
-                onClick={scrollToContact}
-                size="lg"
-                className="bg-gradient-to-r from-[#A4508B] to-[#8B3E73] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                {t("process.cta")}
-                <Rocket className="ml-3 h-5 w-5" />
-              </Button>
-            </motion.div>
           </div>
         </div>
       </div>

@@ -36,16 +36,12 @@ export const translations = {
         "website": "Site Web"
       },
       "project1": {
-        "title": "Boutique Mode Premium",
-        "description": "Plateforme e-commerce moderne avec système de paiement intégré, gestion d'inventaire et interface utilisateur optimisée pour la conversion."
+        "title": "PlexView",
+        "description": "Page d'accueil pour une plateforme de gestion de propriétés locatives. Interface simplifiée pour les gestionnaires immobiliers pour gérer efficacement leurs opérations de location."
       },
       "project2": {
-        "title": "Tableau de Bord Entreprise",
-        "description": "Application web personnalisée pour la gestion des données d'entreprise avec analytics en temps réel et rapports automatisés."
-      },
-      "project3": {
-        "title": "Site Restauration",
-        "description": "Site web élégant pour restaurant avec système de réservation en ligne, menu interactif et intégration des réseaux sociaux."
+        "title": "StreamsBuddy",
+        "description": "Page d'accueil pour un copilote de streaming intelligent qui maintient les streams vivants, protège contre les problèmes techniques, et aide les streamers à ne jamais manquer un moment fort."
       }
     },
     "process": {
@@ -98,10 +94,11 @@ export const translations = {
       "response-time-label": "Temps de réponse",
       "response-time": "24h en moyenne",
       "consultation-label": "Consultation",
-      "consultation": "Gratuite et sans engagement"
+      "consultation": "Gratuite et sans engagement",
+      "sending": "Envoi en cours...",
     },
     "footer": {
-      "rights-reserved": "© 2024 Kozzo. Tous droits réservés.",
+      "rights-reserved": "© 2025 Kozzo. Tous droits réservés.",
       "description": "Solutions numériques personnalisées pour propulser votre entreprise vers le monde de demain.",
       "quick-links": "Liens rapides",
       "contact-info": "Contact",
@@ -145,16 +142,12 @@ export const translations = {
         "website": "Website"
       },
       "project1": {
-        "title": "Premium Fashion Store",
-        "description": "Modern e-commerce platform with integrated payment system, inventory management, and user interface optimized for conversion."
+        "title": "PlexView",
+        "description": "Landing page for a rental property management platform. Streamlined interface for property managers to efficiently handle their rental operations."
       },
       "project2": {
-        "title": "Enterprise Dashboard",
-        "description": "Custom web application for enterprise data management with real-time analytics and automated reporting."
-      },
-      "project3": {
-        "title": "Restaurant Website",
-        "description": "Elegant restaurant website with online reservation system, interactive menu, and social media integration."
+        "title": "StreamsBuddy",
+        "description": "Landing page for an intelligent streaming copilot that keeps streams lively, protects from technical issues, and helps streamers never miss a highlight."
       }
     },
     "process": {
@@ -207,10 +200,11 @@ export const translations = {
       "response-time-label": "Response time",
       "response-time": "24h on average",
       "consultation-label": "Consultation",
-      "consultation": "Free and no commitment"
+      "consultation": "Free and no commitment",
+      "sending": "Sending...",
     },
     "footer": {
-      "rights-reserved": "© 2024 Kozzo. All rights reserved.",
+      "rights-reserved": "© 2025 Kozzo. All rights reserved.",
       "description": "Personalized digital solutions to propel your business into tomorrow's world.",
       "quick-links": "Quick links",
       "contact-info": "Contact",

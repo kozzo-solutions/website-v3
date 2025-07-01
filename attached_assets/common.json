@@ -31,7 +31,7 @@
 
     "about-us": {
         "about-us-title": "À propos",
-        "kozzo-history": "Fondée en 2024 par Étienne Arsenault, bachelier en informatique, et Jonathan Bessette, finissant en génie logiciel, Kozzo est une jeune entreprise motivée à aider ses clients à se démarquer dans le monde en pleine expansion du numérique.",
+        "kozzo-history": "Fondée en 2025 par Étienne Arsenault, bachelier en informatique, et Jonathan Bessette, finissant en génie logiciel, Kozzo est une jeune entreprise motivée à aider ses clients à se démarquer dans le monde en pleine expansion du numérique.",
         "kozzo-description": "Nous savons que chaque projet numérique nécessite une approche sur-mesure ainsi qu'une étroite collaboration avec nos clients. Nous créons de cette façon des solutions adaptées qui améliorent votre visibilité et garantissent une intégration fluide, apportant ainsi une valeur ajoutée à votre entreprise. Rejoignez Kozzo pour bénéficier de notre savoir-faire professionnel et transformer vos idées en réalité.",
         "together":"Ensemble, propulsons votre entreprise vers le monde de demain !",
         "co-owner-title": "Co-propriétaire"
@@ -55,10 +55,11 @@
         "email-error-invalid":"Courriel invalide",
         "object-error": "Sujet est requis",
         "message-error": "Message est requis",
+        "sending": "Envoi en cours...",
         "confirmation-message": "Merci d'avoir soumis votre demande à Kozzo ! Notre équipe répondra à votre requête dans les plus bref délais."
     },
 
     "footer": {
-        "rights-reserved": "© 2024 Kozzo. Tous droits réservés."
+        "rights-reserved": "© 2025 Kozzo. Tous droits réservés."
     }
 }
