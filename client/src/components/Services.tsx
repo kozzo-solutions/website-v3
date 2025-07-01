@@ -56,7 +56,7 @@ export function Services() {
             return (
               <motion.div
                 key={index}
-                className="group p-8 bg-muted/50 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-border"
+                className="group p-8 bg-muted/50 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-border"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -65,11 +65,12 @@ export function Services() {
               >
                 <motion.div
                   className="w-16 h-16 bg-[#82175D]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                  whileHover={{ rotate: 5 }}
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <Icon className="h-8 w-8 text-[#82175D]" />
+                  <Icon className="h-8 w-8 text-[#82175D] group-hover:text-[#8B3E73] transition-colors duration-300" />
                 </motion.div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-[#82175D] transition-colors duration-300">
                   {t(service.titleKey)}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

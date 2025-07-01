@@ -74,7 +74,7 @@ export function Realizations() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="group bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+              className="group bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-border/50 hover:border-[#82175D]/30"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -83,10 +83,12 @@ export function Realizations() {
               onClick={() => window.open(project.link, "_blank")}
             >
               <div className="relative overflow-hidden">
-                <img
+                <motion.img
                   src={project.image}
                   alt={t(project.titleKey)}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
@@ -95,9 +97,14 @@ export function Realizations() {
                   <Badge className={project.categoryColor}>
                     {t(project.categoryKey)}
                   </Badge>
-                  <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-[#82175D] transition-colors duration-300" />
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotate: 15 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-[#82175D] transition-colors duration-300" />
+                  </motion.div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
+                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-[#82175D] transition-colors duration-300">
                   {t(project.titleKey)}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
