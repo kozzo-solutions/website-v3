@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -27,27 +27,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Theme detection script - runs before React to prevent flash -->
+    <!-- Force dark mode always -->
     <script>
-      (function() {
-        const storedTheme = localStorage.getItem('vite-ui-theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        // If no stored theme, default to system preference
-        // If stored theme is 'system', use system preference
-        // Otherwise use stored theme
-        const shouldUseDark = storedTheme === 'dark' || 
-                             ((!storedTheme || storedTheme === 'system') && systemPrefersDark);
-        
-        if (shouldUseDark) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.add('light');
-        }
-      })();
+      document.documentElement.classList.add('dark');
     </script>
-    <script type="module" crossorigin src="/assets/index-DiOB3G4j.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DcEdUMM4.css">
+    <script type="module" crossorigin src="/assets/index-Belxkc0k.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CG26WDiz.css">
   </head>
   <body>
     <div id="root"></div>
