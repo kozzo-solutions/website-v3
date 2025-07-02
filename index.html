@@ -26,8 +26,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-DNhfxbrI.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BrsYD3O_.css">
+    
+    <!-- Theme detection script - runs before React to prevent flash -->
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('vite-ui-theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // If no stored theme, default to system preference
+        // If stored theme is 'system', use system preference
+        // Otherwise use stored theme
+        const shouldUseDark = storedTheme === 'dark' || 
+                             ((!storedTheme || storedTheme === 'system') && systemPrefersDark);
+        
+        if (shouldUseDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DiOB3G4j.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DcEdUMM4.css">
   </head>
   <body>
     <div id="root"></div>
