@@ -48,6 +48,31 @@
   --ring: 324 65% 53%; /* #82175D - Kozzo Purple */
 }
 
+/* Default to dark mode if user prefers dark and no theme class is set */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not(.dark) {
+    --background: 222 84% 4.9%; /* #020817 */
+    --foreground: 210 40% 98%; /* #F8FAFC */
+    --muted: 218 22% 11%; /* #1E293B */
+    --muted-foreground: 215 20% 65%; /* #94A3B8 */
+    --popover: 222 84% 4.9%; /* #020817 */
+    --popover-foreground: 210 40% 98%; /* #F8FAFC */
+    --card: 222 84% 4.9%; /* #020817 */
+    --card-foreground: 210 40% 98%; /* #F8FAFC */
+    --border: 217 33% 17%; /* #334155 */
+    --input: 217 33% 17%; /* #334155 */
+    --primary: 324 65% 53%; /* #82175D - Kozzo Purple */
+    --primary-foreground: 222 84% 4.9%; /* #020817 */
+    --secondary: 217 33% 17%; /* #334155 */
+    --secondary-foreground: 210 40% 98%; /* #F8FAFC */
+    --accent: 217 33% 17%; /* #334155 */
+    --accent-foreground: 210 40% 98%; /* #F8FAFC */
+    --destructive: 0 63% 31%; /* #7F1D1D */
+    --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+    --ring: 324 65% 53%; /* #82175D - Kozzo Purple */
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

@@ -97,15 +97,15 @@ export function Process() {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Vertical line for all devices */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#82175D] via-[#8B3E73] to-[#9D4F88] opacity-50" />
+            <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#82175D] via-[#8B3E73] to-[#9D4F88] opacity-50" />
 
             {/* Start indicator */}
-            <div className="absolute left-8 top-0 transform -translate-x-1/2 -translate-y-2">
+            <div className="absolute left-6 sm:left-8 top-0 transform -translate-x-1/2 -translate-y-2">
               <div className="w-4 h-4 bg-[#82175D] rounded-full border-2 border-background shadow-md"></div>
             </div>
 
             {/* End indicator */}
-            <div className="absolute left-8 bottom-0 transform -translate-x-1/2 translate-y-2">
+            <div className="absolute left-6 sm:left-8 bottom-0 transform -translate-x-1/2 translate-y-2">
               <div className="w-4 h-4 bg-gradient-to-br from-[#B0609D] to-[#C371B2] rounded-full border-2 border-background shadow-md"></div>
             </div>
 
@@ -122,34 +122,34 @@ export function Process() {
                   viewport={{ once: true }}
                 >
                   {/* Timeline node */}
-                  <div className="absolute left-8 top-8 transform -translate-x-1/2">
+                  <div className="absolute left-6 sm:left-8 top-6 sm:top-8 transform -translate-x-1/2">
                     <motion.div
-                      className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg border-4 border-background`}
+                      className={`w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg border-4 border-background`}
                       whileHover={
                         !isTouchDevice ? { scale: 1.1, rotate: 5 } : undefined
                       }
                       transition={{ duration: 0.3 }}
                     >
-                      <Icon className="w-8 h-8 text-white" />
+                      <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </motion.div>
                   </div>
 
                   {/* Content card */}
                   <motion.div
-                    className="ml-20"
+                    className="ml-14 sm:ml-20"
                     whileHover={!isTouchDevice ? { y: -8 } : undefined}
                     transition={{ duration: 0.3 }}
                   >
                     <div
-                      className={`${step.bgColor} backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl`}
+                      className={`${step.bgColor} backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl`}
                     >
                       <div className="flex items-center gap-4 mb-4">
                         <div
-                          className={`w-8 h-8 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-bold text-sm`}
+                          className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-bold text-sm sm:text-base flex-shrink-0`}
                         >
                           {step.number}
                         </div>
-                        <h3 className="text-2xl font-bold text-foreground">
+                        <h3 className="text-xl sm:text-2xl font-bold text-foreground">
                           {t(step.titleKey)}
                         </h3>
                       </div>
